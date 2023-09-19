@@ -135,3 +135,170 @@ gskdevops
   668  history
   669  cd raghu/
   670  history
+
+
+  557  git commit -a -m "appended"
+  558  git status
+  559  ls -1
+  560  ls -la
+  561  git branch dev
+  562  git branch
+  563  git checkout dev
+  564  git branch
+  565  touch dev.txt
+  566  git status
+  567  git add
+  568  -m "dev commit"
+  569  ls -l
+  570  git status
+  571  git ls-files
+  572  ls-l
+  573  ls -l
+  574  git checkout dev
+  575  ls -l
+  576  git log
+  577  git branch
+  578  git checkout master
+  579  git log
+  580  git merge dev
+  581  git log
+  582  git branch
+  583  vi dev.txt
+  584  cat dev.txt
+  585  git status
+  586  git branch
+  587  git checkout master
+  588  git branch
+  589  vi dev.txt
+  590  cat dev.txt
+  591  git config merge.tool vimdiff
+  592  get config merge.conflictstyle diff3
+  593  git config merge.conflictstyle diff3
+  594  git config mergetool.prompt false
+  595  git mergetool
+  596  git status
+  597  rm dev.txt.orig
+  598  history
+  599  mkdir ishika
+  600  cd ishika
+  601  touch welcome.txt
+  602  git status
+  603  git init
+  604  git add welcome.txt
+  605  git commit welcome.txt -m "ishika"
+  606  clear
+  607  git status
+  608  pwd
+  609  ls -l
+  610  history
+  611  echo welcome > welcome.txt
+  612  cat welcome.txt
+  613  git status
+  614  git commit -a am "appended"
+  615  git commit -a -m "appended"
+  616  git status
+  617  ls -l
+  618  ls -la
+  619  git branch dev
+  620  git branch
+  621  git checkout dev
+  622  git branch
+  623  touch dev.txt
+  624  git status
+  625  git add .
+  626  git comit . -m "dev commit"
+  627  git commit . -m "dev commit"
+  628  git status
+  629  git la-files
+  630  git ls-files
+  631  git checkout master
+  632  git ls-files
+  633  ls -l
+  634  git checkout dev
+  635  ls -l
+  636  git log
+  637  git branch
+  638  git checkout master
+  639  git log
+  640  git branch
+  641  git merge dev
+  642  ll
+  643  git log
+  644  vi dev.txt
+  645  cat dev.txt
+  646  git branch
+  647  git checkout master
+  648  git branch
+  649  git config merge.tool vimdiff
+  650  git branch
+  651  git checkout dev
+  652  git branch
+  653  git config merge.tool vimdiff
+  654  git config merge.conflictstle diff3
+  655  git config mergetool.prompt false
+  656  git mergetool
+  657  git branch
+  658  git status
+  659  git commit -a -m "merge"
+  660  git merge master
+  661  git config merge.tool vimdiff
+  662  git branch
+  663  git config merge.conflictstle diff3
+  664  git config mergetool.prompt false
+  665  git mergetool
+  666  ls -l
+  667  cat dev.txt.orig
+  668  history
+  669  cd raghu
+  670  clear
+  671  git remote -v
+  672  git remote add origin https://github.com/raghuopsdev/gskdevops.git
+  673  git remote -v
+  674  git branch
+  675  git checkout master
+  676  clear
+  677  git status
+  678  git push -u origin master
+  679  git branch
+  680  git ls-files
+  681  history
+  682  ll
+  683  rm dev.txt
+  684  git checkout dev.txt
+  685  ll
+  686  rm dev.txt
+  687  git rm dev.txt
+  688  ll
+  689  git ls-files
+  690  git pull
+  691  ll
+  692  git pull origin master
+  693  ll
+  694  git branch
+  695  cd ../
+  696  git clone https://github.com/raghuopsdev/gskdevops.git
+  697  ll
+  698  cd gskdevops/
+  699  git branch
+  700  git pull origin master
+  701  git branch
+  702  git config pull.rebase false
+  703  git branch
+  704  git pull origin master
+  705  git pull origin master --unrelated-histories
+  706  git pull origin master --allow-unrelated-histories
+  707  git branch
+  708  ll
+  709  cp dev.txt ../raghu/
+  710  cd raghu
+  711  ll
+  712  git status
+  713  git push origin master
+  714  git pull origin master
+  715  git status
+  716  git branch
+  717  cd ../raghu/
+  718  ll
+  719  git status
+  720  cat dev.txt 
+
