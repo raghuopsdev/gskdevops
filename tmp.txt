@@ -302,3 +302,48 @@ gskdevops
   719  git status
   720  cat dev.txt 
 
+Docker
+
+  110  yum install -y docker; service docker start
+  111  clear
+  112  docker pull hello-world
+  113  clear
+  114  docker pull httpd
+  115  docker images
+  116  docker run -d httpd
+  117  docker ps
+  118  docker run -d -p httpd
+  119  docker run -p httpd
+  120  clear
+  121  docker ps
+  122  docker run -P httpd
+  123  docker ps
+  124  docker run -d -p 3000:80 httpd
+  125  docker ps
+  126  clear
+  127  docker pull raghuopsdev/tomcat
+  128  docker pull raghuopsdev/tomcat:7
+  129  clear
+  130  docker images
+  131  docker run -d -p 9000:8080 raghuopsdev/tomcat:7
+  132  docker ps
+  133  curl ifconfig.co
+  134  clear
+  135  curl ifconfig.com
+  136  docker ps
+  137  docker pull jenkins/jenkins:lts
+  138  docker images
+  139  docker run -d -p 4000:8080 jenkins/jenkins:lts
+  140  docker ps
+  141  history
+  142  clear
+  143  vi run -it centos
+  144  docker run -it centos:7
+  145  docker ps -a
+  146  docker commit 327e4b3d1624 gsk:1.0
+  147  docker images
+  148  docker login
+  149  docker tag gsk:1.0 raghuopsdev/gsk:1.0
+  150  docker images
+  151  docker push raghuopsdev/gsk:1.0
+  152  history
