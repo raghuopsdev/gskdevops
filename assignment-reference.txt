@@ -1,0 +1,59 @@
+Jenkins
+==================================
+
+https://github.com/raghuopsdev/hello-world-1.git
+
+JDK path
+----------
+/usr/lib/jvm/msopenjdk-17
+
+Maven thru Jenkins UI you can install
+----------------------------------------
+maven
+clean install
+
+Setup Helloworld Job
+--------------------------
+
+AKS Assignment
+===============
+
+a) Setup Kubernetes Cluster
+b) Access it from Cloudshell
+c) Copy azure-vote-all-in-one-redis.yaml
+from this github repository to your Cloud shell
+https://github.com/raghuopsdev/azure-voting-app-redis.git
+d) kubectl apply -f azure-vote-all-in-one-redis.yaml
+e) kubectl get svc -o wide
+f) Select ExternalIP with respective svc (azure-vote-front)
+g) Go to browser and http://<ip>/
+h) Application will be loaded and take a screenshot and submit.
+
+
+======================
+
+Terraform Assignment
+-----------------------------------
+
+Refer the code in the following github repository for terraform codes to deploy an Azure Virtual Machine.
+https://github.com/raghuopsdev/terraformscript.git
+
+Files to download to cloud shell.
+1. Terraform azure provider file.txt -> save this file as provider.tf in cloud shell.
+2. Terraform azure vm file creation.txt -> save this file as main.tf in cloud shell.
+
+$ terraform --version (to check if terraform installed or not and which version it is)
+$ terraform init (download required providers to connect to azure)
+$ terraform fmt (it will check the format of the main.tf and provider.tf file)
+$ terraform validate (you will get saying validation is successfull)
+$ terraform apply (you have to say yes when asked)
+
+Refer the following Learn Terraform Documentation for detailed explanation if any.
+
+https://developer.hashicorp.com/terraform/tutorials/azure-get-started/azure-build
+
+--------------------------------------------------------------------------------------------
+
+Ansible Assignment
+
+
