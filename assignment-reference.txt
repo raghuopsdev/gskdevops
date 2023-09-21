@@ -56,4 +56,98 @@ https://developer.hashicorp.com/terraform/tutorials/azure-get-started/azure-buil
 
 Ansible Assignment
 
+1. Write a playbook to install apache webserver.
+
+
+
+Steps
+-------
+i) Deploy a Centos Image
+ii) Install Ansible Software
+iii) Setup SSH key
+iv) Setup Inventory
+v) Write the playbook
+vi) Execute the Playbook
+
+Playbook
+--------------
+
+[root@ansible-controller ansible]# cat webserver.yml
+---
+- hosts: localhost
+  vars:
+    http_port: 80
+    max_clients: 200
+  remote_user: root
+  tasks:
+  - name: ensure apache is at the latest version
+    yum:
+      name: httpd
+      state: latest
+    notify:
+    - restart apache
+  - name: ensure apache is running (and enable it at boot)
+    service:
+      name: httpd
+      state: started
+      enabled: yes
+  handlers:
+    - name: restart apache
+      service:
+        name: httpd
+        state: restarted
+
+
+
+History
+--------
+
+[root@ansible-controller ansible]# history
+    1  clear
+    2  yum list | grep ansible
+    3  yum install ansible
+    4  yum repolist
+    5  pipx install --include-deps ansible
+    6  yum install epel-release
+    7  yum list | grep ansible
+    8  yum install ansible
+    9  ssh-keygen
+   10  clear
+   11  ansible --version
+   12  pwd
+   13  cd /etc/ansible/
+   14  ll
+   15  vi hosts
+   16  ansible -m ping all
+   17  ifconfig
+   18  vi hosts
+   19  ansible -m ping all
+   20  ssh 10.1.0.5
+   21  vi /etc/ssh/sshd_config
+   22  service sshd restart
+   23  ssh 10.1.0.5
+   24  passwd
+   25  ssh 10.1.0.5
+   26  cd /root/.ssh/
+   27  ll
+   28  cat id_rsa.pub
+   29  vi authorized_keys
+   30  cd /etc/ansible/
+   31  ansible -m ping all
+   32  pwd
+   33  ll
+   34  mkdir playbook
+   35  vi webserver.yml
+   36  ansible-playbook webserver.yml
+   37  vi webserver.yml
+   38  ansible-playbook webserver.yml
+   39  ps -ef | grep httpd
+   40  clear
+   41  cat webserver.yml
+   42  pwd
+   43  ll
+   44  cat hosts
+
+
+
 
