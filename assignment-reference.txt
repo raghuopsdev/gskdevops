@@ -70,7 +70,7 @@ iii) Setup SSH key
        c) ssh-keygen
        d) cat id_rsa.pub (copy the output)
        e) vi authorized_keys (paste the content)
-       f) vi /etc/ssh/sshd_config (uncomment Permit root login)
+       f) vi /etc/ssh/sshd_config (Remove the comment for Permit root login)
        g) service sshd restart
 iv) Setup Inventory
 v) Write the playbook
