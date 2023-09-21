@@ -65,6 +65,13 @@ Steps
 i) Deploy a Centos Image
 ii) Install Ansible Software
 iii) Setup SSH key
+       a) sudo su
+       b) cd /root/.ssh/
+       c) ssh-keygen
+       d) cat id_rsa.pub (copy the output)
+       e) vi authorized_keys (paste the content)
+       f) vi /etc/ssh/sshd_config (uncomment Permit root login)
+       g) service sshd restart
 iv) Setup Inventory
 v) Write the playbook
 vi) Execute the Playbook
